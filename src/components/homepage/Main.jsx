@@ -48,8 +48,8 @@ function Main() {
   if (isMedium) {
     return (
       <div ref={ref} className=" w-full py-5 px-5 h-auto bg-[#202020]">
-        <Navbar/>
-        <div  className=" ">
+        <Navbar />
+        <div className=" ">
           <img ref={imgRef} src={boy} alt="" />
         </div>
         <div className=" flex gap-2 flex-col items-center justify-center">
@@ -65,7 +65,10 @@ function Main() {
           </div>
           <hr className=" w-full border-gray-500" />
         </div>
-        <div ref={ref} className=" w-full  flex flex-col mt-5 items-start gap-1 justify-center">
+        <div
+          ref={ref}
+          className=" w-full  flex flex-col mt-5 items-start gap-1 justify-center"
+        >
           <h1 className=" text-gray-300 text-xl">skills:-</h1>
           <div className="  w-full flex gap-5 items-start">
             <div className=" flex flex-col gap-1 justify-center items-center">
@@ -76,8 +79,11 @@ function Main() {
               <h1 className="flex gap-2 items-center text-gray-300">
                 Reactjs- <GrReactjs className=" md:text-xl text-violet-500" />
               </h1>
-              <div className=" w-full h-[5px] bg-[#303030] rounded-full">
-                <div ref={reactRef} className=" w-[310px] h-full bg-violet-700"></div>
+              <div className=" w-72 h-[5px] bg-[#303030] rounded-full">
+                <div
+                  ref={reactRef}
+                  className=" w-64 h-full bg-violet-700"
+                ></div>
               </div>
             </div>
           </div>
@@ -90,8 +96,8 @@ function Main() {
               <h1 className="flex gap-2 items-center text-gray-300">
                 Nodejs- <BiLogoNodejs className=" md:text-xl text-yellow-500" />
               </h1>
-              <div className=" w-full h-[5px] bg-[#303030] rounded-full">
-                <div ref={nodeRef} className=" w-[290px] h-full bg-yellow-500"></div>
+              <div className=" w-72 h-[5px] bg-[#303030] rounded-full">
+                <div ref={nodeRef} className=" w-64 h-full bg-yellow-500"></div>
               </div>
             </div>
           </div>
@@ -104,8 +110,11 @@ function Main() {
               <h1 className="flex gap-2 items-center text-gray-300">
                 Expressjs- <SiExpress className=" md:text-xl text-gray-200" />
               </h1>
-              <div className=" w-full h-[5px] bg-[#303030] rounded-full">
-                <div ref={expressRef} className=" w-[280px] h-full bg-gray-300"></div>
+              <div className=" w-72 h-[5px] bg-[#303030] rounded-full">
+                <div
+                  ref={expressRef}
+                  className=" w-64 h-full bg-gray-300"
+                ></div>
               </div>
             </div>
           </div>
@@ -116,10 +125,11 @@ function Main() {
             </div>
             <div className=" w-full flex flex-col gap-1">
               <h1 className="flex gap-2 items-center text-gray-300">
-                Mongodb- <BiLogoMongodb className=" md:text-xl text-green-500" />
+                Mongodb-{" "}
+                <BiLogoMongodb className=" md:text-xl text-green-500" />
               </h1>
-              <div className=" w-full h-[5px] bg-[#303030] rounded-full">
-                <div ref={mongoRef} className=" w-[240px] h-full bg-green-500"></div>
+              <div className=" w-72 h-[5px] bg-[#303030] rounded-full">
+                <div ref={mongoRef} className=" w-64 h-full bg-green-500"></div>
               </div>
             </div>
           </div>
@@ -130,10 +140,14 @@ function Main() {
             </div>
             <div className=" w-full flex flex-col gap-1">
               <h1 className="flex gap-2 items-center text-gray-300">
-                Tailwindcss- <SiTailwindcss className=" md:text-xl text-blue-500" />
+                Tailwindcss-{" "}
+                <SiTailwindcss className=" md:text-xl text-blue-500" />
               </h1>
-              <div className=" w-full h-[5px] bg-[#303030] rounded-full">
-                <div ref={TailwindRef} className=" w-[300px] h-full bg-blue-500"></div>
+              <div className=" w-72 h-[5px] bg-[#303030] rounded-full">
+                <div
+                  ref={TailwindRef}
+                  className=" w-64 h-full bg-blue-500"
+                ></div>
               </div>
             </div>
           </div>
