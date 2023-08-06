@@ -9,7 +9,7 @@ function Mskills() {
     threshold: 0,
   });
 
-//   const imgRef = useRef();
+  //   const imgRef = useRef();
 
   const reactMref = useRef();
   const nodeMref = useRef();
@@ -26,25 +26,22 @@ function Mskills() {
       TailwindMRef.current.style.width = "278px";
     } else {
       // imgRef.current.style.transform = "scale(0%)";
-      reactMref.current.style.width = "0px";
-      nodeMref.current.style.width = "0px";
-      expressMRef.current.style.width = "0px";
-      mongoMRef.current.style.width = "0px";
-      TailwindMRef.current.style.width = "0px";
+      reactMref.current.style.width = "0%";
+      nodeMref.current.style.width = "0%";
+      expressMRef.current.style.width = "0%";
+      mongoMRef.current.style.width = "0%";
+      TailwindMRef.current.style.width = "0%";
     }
   }, [inView]);
   return (
-    <div
-      ref={ref}
-      className=" w-full  flex flex-col mt-5 items-start gap-1 justify-center"
-    >
+    <div className=" w-full  flex flex-col mt-5 items-start gap-1 justify-center">
       <h1 className=" text-gray-300 text-xl">skills:-</h1>
       <div className="  w-full flex gap-5 items-start">
         <div className=" flex flex-col gap-1 justify-center items-center">
           <div className=" w-4 h-4 rounded-full bg-gray-700"></div>
           <div className=" w-[1px] h-10 bg-gray-300"></div>
         </div>
-        <div className=" w-full flex flex-col gap-1">
+        <div ref={ref} className=" w-full flex flex-col gap-1">
           <h1 className="flex gap-2 items-center text-gray-300">
             Reactjs- <GrReactjs className=" md:text-xl text-violet-500" />
           </h1>
