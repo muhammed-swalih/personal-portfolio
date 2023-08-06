@@ -1,7 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../Navbar";
 import hire from "../../assets/hire1.webp";
-import { BsTelegram, BsWhatsapp, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
+import {
+  BsTelegram,
+  BsWhatsapp,
+  BsInstagram,
+  BsGithub,
+  BsLinkedin,
+} from "react-icons/bs";
 import { InView, useInView } from "react-intersection-observer";
 import { Button } from "@mui/material";
 function Hire() {
@@ -42,7 +48,7 @@ function Hire() {
           <div className=" flex flex-col gap-5  md:flex md:flex-col md:gap-5">
             <h1 className=" text-4xl text-gray-500">Get in touch</h1>
             <div className="flex flex-col gap-2  md:gap-2 md:flex md:flex-col">
-                <p className=" text-gray-500 text-sm">Send a mail</p>
+              <p className=" text-gray-500 text-sm">Send a mail</p>
               <input
                 type="text"
                 placeholder="name"
@@ -63,30 +69,39 @@ function Hire() {
               <Button variant="contained">send</Button>
             </div>
             <div className="md:mt-2 flex gap-10 items-center justify-center">
-              <h1
-                ref={whatsRef}
-                style={{ transform: "scale(0%)", transitionDuration: "0.5s" }}
-              >
-                <BsWhatsapp className=" text-3xl text-green-500 md:text-5xl" />
-              </h1>
-              <h1
-                ref={instaRef}
-                style={{ transform: "scale(0%)", transitionDuration: "1s" }}
-              >
-                <BsLinkedin className="text-3xl text-blue-500 md:text-5xl" />
-              </h1>
-              <h1
-                ref={gitRef}
-                style={{ transform: "scale(0%)", transitionDuration: "1.5s" }}
-              >
-                <BsGithub className=" text-3xl text-gray-400 md:text-5xl" />
-              </h1>
-              <h1
-                ref={teleRef}
-                style={{ transform: "scale(0%)", transitionDuration: "2s" }}
-              >
-                <BsTelegram className=" text-3xl text-blue-400 md:text-5xl " />
-              </h1>
+              <a href="https://wa.me/7736447760" target="_blank">
+                <h1
+                  ref={whatsRef}
+                  style={{ transform: "scale(0%)", transitionDuration: "0.5s" }}
+                >
+                  <BsWhatsapp className=" text-3xl text-green-500 md:text-5xl" />
+                </h1>
+              </a>
+              <a href="https://www.linkedin.com/in/muhammed-swalih-825748202/">
+                <h1
+                  ref={instaRef}
+                  style={{ transform: "scale(0%)", transitionDuration: "1s" }}
+                >
+                  <BsLinkedin className="text-3xl text-blue-500 md:text-5xl" />
+                </h1>
+              </a>
+              <a href="https://github.com/muhammed-swalih">
+                <h1
+                  ref={gitRef}
+                  style={{ transform: "scale(0%)", transitionDuration: "1.5s" }}
+                >
+                  <BsGithub className=" text-3xl text-gray-400 md:text-5xl" />
+                </h1>
+              </a>
+
+              <a href="https://t.me/7736447760">
+                <h1
+                  ref={teleRef}
+                  style={{ transform: "scale(0%)", transitionDuration: "2s" }}
+                >
+                  <BsTelegram className=" text-3xl text-blue-400 md:text-5xl " />
+                </h1>
+              </a>
             </div>
           </div>
         </div>
