@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../Navbar";
-import hire from "../../assets/hire1.png";
+import hire from "../../assets/hire1.webp";
 import { BsTelegram, BsWhatsapp, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import { InView, useInView } from "react-intersection-observer";
 import { Button } from "@mui/material";

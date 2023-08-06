@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../Navbar";
-import netflix from "../../assets/netflix1.jpeg";
-import trekk from "../../assets/trekk.png";
-import port from "../../assets/porfolio.png";
+import netflix from "../../assets/netflix1.webp";
+import trekk from "../../assets/trekk.webp";
+import port from "../../assets/porfolio.webp";
 import links from "../../assets/links.webp";
-import greez from "../../assets/greenz1.png";
+import greez from "../../assets/greenz1.webp";
 import { useInView } from "react-intersection-observer";
 function Project() {
   const { ref, inView } = useInView({

@@ -3,7 +3,7 @@ import { HiHome } from "react-icons/hi";
 import { GiBookmarklet } from "react-icons/gi";
 import { IoIosContact } from "react-icons/io";
 import { MdWorkspacePremium } from "react-icons/md";
-import img from "../../assets/table1.png";
+import img from "../../assets/table1.webp";
 import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import Navbar from "../Navbar";
